@@ -14,11 +14,11 @@
 ![](https://github.com/wzgl5533/CustomView/blob/master/myview/src/main/java/cn/qlh/sdk/myview/loading/spinkit_view.gif)
 
 使用方法：
-\\\
+```
 SpinKitViewManager loading = new SpinKitViewManager(this);
         loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
                 .setDlgBg(Color.parseColor("#18AD5C"))
                 .setTipsTxt("欢迎...")
                 .show();
-\\\
+```
 
