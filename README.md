@@ -21,4 +21,5 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
                 .setTipsTxt("欢迎...")
                 .show();
 ```
+![](https://github.com/wzgl5533/CustomView/blob/master/screenshot/Screenshot_2018-03-02-13-29-07.jpeg)
 
