@@ -7,3 +7,9 @@
 # 模块分类
 
 * Loading:主要是一些加载进度对话框
+
+
+# 效果介绍
+### Loading
+![](https://github.com/wzgl5533/CustomView/blob/master/myview/src/main/java/cn/qlh/sdk/myview/loading/spinkit_view.gif)
+
