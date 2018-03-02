@@ -3,4 +3,5 @@
     <dimen name="three_grid_unit">24dp</dimen>
     <dimen name="one_and_a_half_grid_unit">12dp</dimen>
     <dimen name="radio_button_1_px">@dimen/x2</dimen>
+    <dimen name="progress_ly_size">80dp</dimen>
 </resources>
