@@ -16,7 +16,7 @@
 使用方法：
 ```
 SpinKitViewManager loading = new SpinKitViewManager(this);
-        loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
+loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
                 .setDlgBg(Color.parseColor("#18AD5C"))
                 .setTipsTxt("欢迎...")
                 .show();
