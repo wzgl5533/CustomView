@@ -26,7 +26,7 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 
 ### MyClearEditText
 
-使用方法：
+#### Use 使用方法：
 ```
 <cn.qlh.sdk.myview.edittext.MyClearEditText
             android:layout_width="match_parent"
@@ -34,5 +34,11 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
             app:edt_delete_icon_width="@dimen/x100"
             app:edt_delete_icon_height="@dimen/x100" />       
 ```
+#### Attrs 属性
+|attr|format|description|
+|---|:---|:---:|
+|edt_delete_icon_width|dimension|右边删除图标宽度|
+|edt_delete_icon_height|dimension|右边删除图标高度|
+
 
 
