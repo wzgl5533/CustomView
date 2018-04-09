@@ -6,9 +6,12 @@
 
 ## 模块分类
 
-* Loading:主要是一些加载进度对话框
-* ClearEditText：可以自己自定义右边删除图标以及它的宽高
-* SmoothCheckBox：可以自定义颜色
+**进度加载类**
+  * Loading:主要是一些加载进度对话框
+**输入框**
+  * ClearEditText：可以自己自定义右边删除图标以及它的宽高
+**复选框**
+  * SmoothCheckBox：可以自定义颜色
 
 ## 效果介绍
 ### Loading   开源地址：https://github.com/ybq/Android-SpinKit
