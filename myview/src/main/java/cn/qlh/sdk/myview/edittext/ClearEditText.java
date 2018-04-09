@@ -16,7 +16,7 @@ import android.view.animation.TranslateAnimation;
 
 import cn.qlh.sdk.myview.R;
 
-public class MyClearEditText extends AppCompatEditText implements
+public class ClearEditText extends AppCompatEditText implements
         OnFocusChangeListener, TextWatcher {
     /**
      * 删除按钮的引用
@@ -28,16 +28,16 @@ public class MyClearEditText extends AppCompatEditText implements
      */
     private boolean hasFoucs;
  
-    public MyClearEditText(Context context) {
+    public ClearEditText(Context context) {
     	this(context, null); 
     } 
  
-    public MyClearEditText(Context context, AttributeSet attrs) {
+    public ClearEditText(Context context, AttributeSet attrs) {
         //这里构造方法也很重要，不加这个很多属性不能再XML里面定义
     	this(context, attrs, android.R.attr.editTextStyle);
     } 
     
-    public MyClearEditText(Context context, AttributeSet attrs, int defStyle) {
+    public ClearEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs);
     }
@@ -51,9 +51,9 @@ public class MyClearEditText extends AppCompatEditText implements
         	mClearDrawable = getResources().getDrawable(R.drawable.delete_selector); //图片样式
         }
 
-        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.editTextStyle);
-        mDrawableWidth = ta.getDimensionPixelSize(R.styleable.editTextStyle_edt_delete_icon_width,0);
-        mDrawableHight = ta.getDimensionPixelSize(R.styleable.editTextStyle_edt_delete_icon_height,0);
+        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.ClearEditText);
+        mDrawableWidth = ta.getDimensionPixelSize(R.styleable.ClearEditText_edt_delete_icon_width,0);
+        mDrawableHight = ta.getDimensionPixelSize(R.styleable.ClearEditText_edt_delete_icon_height,0);
 
         ta.recycle();
 

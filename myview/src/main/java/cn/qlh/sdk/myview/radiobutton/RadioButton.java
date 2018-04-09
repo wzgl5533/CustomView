@@ -31,13 +31,13 @@ public class RadioButton extends android.widget.RadioButton {
         if (isInEditMode())
             return;
 
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.RadioButton, defStyleAttr, 0);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.RadioButtonStyle, defStyleAttr, 0);
 
         drawable = new CheckableDrawable(getContext(), R.raw.carbon_radiobutton_checked, R.raw.carbon_radiobutton_unchecked, R.raw.carbon_radiobutton_filled, new PointF(0, 0));
         setButtonDrawable(getResources().getDrawable(android.R.color.transparent));
         setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
 
-        ColorStateList csl = a.getColorStateList(R.styleable.RadioButton_carbon_radioColor);
+        ColorStateList csl = a.getColorStateList(R.styleable.RadioButtonStyle_carbon_radioColor);
         if (csl != null)
             drawable.setColor(csl);
 

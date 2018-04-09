@@ -42,7 +42,7 @@ import cn.qlh.sdk.myview.R;
  * Github : github.com/andyxialm
  * Description : A custom CheckBox with animation for Android
  * xml example:
- *  <cn.qlh.sdk.myview.checkbox.MySmoothCheckBox
+ *  <cn.qlh.sdk.myview.checkbox.SmoothCheckBox
  * android:layout_width="40dp"
  * android:layout_height="40dp"
  * app:stroke_width="2dp"
@@ -52,7 +52,7 @@ import cn.qlh.sdk.myview.R;
  * app:color_tick="#FF0000"/>
  */
 
-public class MySmoothCheckBox extends View implements Checkable {
+public class SmoothCheckBox extends View implements Checkable {
     private static final String KEY_INSTANCE_STATE = "InstanceState";
 
     private static final int COLOR_TICK = Color.WHITE;
@@ -78,34 +78,34 @@ public class MySmoothCheckBox extends View implements Checkable {
     private boolean mTickDrawing;
     private OnCheckedChangeListener mListener;
 
-    public MySmoothCheckBox(Context context) {
+    public SmoothCheckBox(Context context) {
         this(context, null);
     }
 
-    public MySmoothCheckBox(Context context, AttributeSet attrs) {
+    public SmoothCheckBox(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public MySmoothCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SmoothCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public MySmoothCheckBox(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public SmoothCheckBox(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(attrs);
     }
 
     private void init(AttributeSet attrs) {
 
-        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.MySmoothCheckBox);
-        int tickColor = ta.getColor(R.styleable.MySmoothCheckBox_color_tick, COLOR_TICK);
-        mAnimDuration = ta.getInt(R.styleable.MySmoothCheckBox_duration, DEF_ANIM_DURATION);
-        mFloorColor = ta.getColor(R.styleable.MySmoothCheckBox_color_unchecked_stroke, COLOR_FLOOR_UNCHECKED);
-        mCheckedColor = ta.getColor(R.styleable.MySmoothCheckBox_color_checked, COLOR_CHECKED);
-        mUnCheckedColor = ta.getColor(R.styleable.MySmoothCheckBox_color_unchecked, COLOR_UNCHECKED);
-        mStrokeWidth = ta.getDimensionPixelSize(R.styleable.MySmoothCheckBox_stroke_width, CompatUtils.dp2px(getContext(), 0));
+        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.SmoothCheckBox);
+        int tickColor = ta.getColor(R.styleable.SmoothCheckBox_sc_color_tick, COLOR_TICK);
+        mAnimDuration = ta.getInt(R.styleable.SmoothCheckBox_sc_duration, DEF_ANIM_DURATION);
+        mFloorColor = ta.getColor(R.styleable.SmoothCheckBox_sc_color_unchecked_stroke, COLOR_FLOOR_UNCHECKED);
+        mCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_sc_color_checked, COLOR_CHECKED);
+        mUnCheckedColor = ta.getColor(R.styleable.SmoothCheckBox_sc_color_unchecked, COLOR_UNCHECKED);
+        mStrokeWidth = ta.getDimensionPixelSize(R.styleable.SmoothCheckBox_sc_stroke_width, CompatUtils.dp2px(getContext(), 0));
         ta.recycle();
 
         mFloorUnCheckedColor = mFloorColor;
@@ -180,7 +180,7 @@ public class MySmoothCheckBox extends View implements Checkable {
         reset();
         invalidate();
         if (mListener != null) {
-            mListener.onCheckedChanged(MySmoothCheckBox.this, mChecked);
+            mListener.onCheckedChanged(SmoothCheckBox.this, mChecked);
         }
     }
 
@@ -200,7 +200,7 @@ public class MySmoothCheckBox extends View implements Checkable {
                 startUnCheckedAnimation();
             }
             if (mListener != null) {
-                mListener.onCheckedChanged(MySmoothCheckBox.this, mChecked);
+                mListener.onCheckedChanged(SmoothCheckBox.this, mChecked);
             }
 
         } else {
@@ -430,6 +430,6 @@ public class MySmoothCheckBox extends View implements Checkable {
     }
 
     public interface OnCheckedChangeListener {
-        void onCheckedChanged(MySmoothCheckBox checkBox, boolean isChecked);
+        void onCheckedChanged(SmoothCheckBox checkBox, boolean isChecked);
     }
 }

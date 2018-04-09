@@ -14,27 +14,50 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="编辑框："/>
-        <cn.qlh.sdk.myview.edittext.MyClearEditText
+        <cn.qlh.sdk.myview.edittext.ClearEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:edt_delete_icon_width="@dimen/x100"
-            app:edt_delete_icon_height="@dimen/x100"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/black"/>
+            app:edt_delete_icon_height="@dimen/x100" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="复选框："/>
-        <cn.qlh.sdk.myview.checkbox.MySmoothCheckBox
+        <cn.qlh.sdk.myview.checkbox.SmoothCheckBox
         android:layout_width="40dp"
          android:layout_height="40dp"
-         app:stroke_width="2dp"
-         app:color_checked="@color/colorAccent"
-         app:color_unchecked="@color/blue"
-         app:color_unchecked_stroke="#00FF00"
-         app:color_tick="#FF0000"/>
+         app:sc_color_unchecked="@color/blue"
+         app:sc_color_unchecked_stroke="#00FF00"
+         app:sc_color_tick="#FF0000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="倒计时："/>
+        <cn.qlh.sdk.myview.button.TimeButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tb_before_text="获取"
+            app:tb_after_text="秒后获取"
+            app:tb_time_span="10"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片："/>
+        <cn.qlh.sdk.myview.imageview.CircleImageView
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/x10"
+            app:civ_border_overlay="false"
+            app:civ_fill_color="@color/blue"
+           android:src="@drawable/arrow"/>
+        <cn.qlh.sdk.myview.imageview.CircleImageView
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/x200"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/x10"
+            app:civ_border_overlay="true"
+            android:src="@drawable/test_icon"/>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
