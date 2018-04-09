@@ -42,7 +42,9 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 |edt_delete_icon_width|dimension|右边删除图标宽度|
 |edt_delete_icon_height|dimension|右边删除图标高度|
 
-### SmoothCheckBox
+---
+
+### SmoothCheckBox  开源地址: https://github.com/andyxialm/SmoothCheckBox
 
 #### Use 使用方法
 ```
@@ -55,6 +57,8 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
          app:color_unchecked_stroke="#00FF00"
          app:color_tick="#FF0000"/>     
 ```
+
+![](https://github.com/andyxialm/SmoothCheckBox/blob/master/art/smoothcb.gif?raw=true)
 ### Attrs 属性
 |attr|format|description|
 |---|:---|:---:|
@@ -65,5 +69,5 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 |color_unchecked|color|未选中时填充颜色|
 |color_unchecked_stroke|color|未选中时边框颜色|
 
-
+---
 
