@@ -23,12 +23,12 @@
 
 ### 效果介绍
 
-## 进度加载类：
+### 进度加载类：
 
-### Loading   开源地址：https://github.com/ybq/Android-SpinKit
+#### Loading   开源地址：https://github.com/ybq/Android-SpinKit
 ![](https://github.com/wzgl5533/CustomView/blob/master/myview/src/main/java/cn/qlh/sdk/myview/loading/spinkit_view.gif)
 
-#### Use 使用方法
+##### Use 使用方法
 ```
 SpinKitViewManager loading = new SpinKitViewManager(this);
 loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
@@ -37,8 +37,6 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
                 .show();
 ```
 ![](https://github.com/wzgl5533/CustomView/blob/master/screenshot/Screenshot_2018-03-02-13-29-07.jpeg)
-
-----
 
 ## 输入框类：
 
