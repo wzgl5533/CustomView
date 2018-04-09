@@ -1,10 +1,10 @@
-# CustomView
+## CustomView
 
-## 简介
+### 简介
 
 本库主要用于自己的项目，收集很多优秀开源的组件，对其进行封装和归纳，方便使用，再此感谢，各位小伙伴也可以使用或者修改维护自己的库，喜欢的可以打个星。
 
-## 模块分类
+### 模块分类
 
 **进度加载类**
   * Loading:主要是一些加载进度对话框
@@ -21,9 +21,7 @@
 **圆形图片**
 * CircleImageView：带边框的圆形图片
 
-## 效果介绍
-
-----
+### 效果介绍
 
 ## 进度加载类：
 
@@ -60,7 +58,6 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 |edt_delete_icon_width|dimension|右边删除图标宽度|
 |edt_delete_icon_height|dimension|右边删除图标高度|
 
----
 
 ## 复选框类：
 
@@ -89,7 +86,6 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 |sc_color_unchecked|color|未选中时填充颜色|
 |sc_color_unchecked_stroke|color|未选中时边框颜色|
 
----
 
 ## 按钮类：
 
@@ -113,7 +109,6 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 |tb_after_text|string|点击之后显示文本|
 |tb_time_span|integer|倒计时时间|
 
----
 
 ## 图片类：
 
