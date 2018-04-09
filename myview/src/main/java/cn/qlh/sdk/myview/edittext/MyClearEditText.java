@@ -1,6 +1,7 @@
 package cn.qlh.sdk.myview.edittext;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
@@ -21,6 +22,7 @@ public class MyClearEditText extends AppCompatEditText implements
      * 删除按钮的引用
      */
     private Drawable mClearDrawable;
+    private int mDrawableWidth,mDrawableHight;
     /**
      * 控件是否有焦点
      */
@@ -32,25 +34,31 @@ public class MyClearEditText extends AppCompatEditText implements
  
     public MyClearEditText(Context context, AttributeSet attrs) {
         //这里构造方法也很重要，不加这个很多属性不能再XML里面定义
-    	this(context, attrs, android.R.attr.editTextStyle); 
+    	this(context, attrs, android.R.attr.editTextStyle);
     } 
     
     public MyClearEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init();
+        init(attrs);
     }
     
     
-    private void init() {
+    private void init(AttributeSet attrs) {
         //获取EditText的DrawableRight,假如没有设置我们就使用默认的图片
-    	mClearDrawable = getCompoundDrawables()[2]; 
-        if (mClearDrawable == null) { 
+    	mClearDrawable = getCompoundDrawables()[2];
+        if (mClearDrawable == null) {
 //        	throw new NullPointerException("You can add drawableRight attribute in XML");
         	mClearDrawable = getResources().getDrawable(R.drawable.delete_selector); //图片样式
-        } 
+        }
 
-        int width = (int) getResources().getDimension(R.dimen.x48);
-        int height = (int) getResources().getDimension(R.dimen.x48);
+        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.editTextStyle);
+        mDrawableWidth = ta.getDimensionPixelSize(R.styleable.editTextStyle_edt_delete_icon_width,0);
+        mDrawableHight = ta.getDimensionPixelSize(R.styleable.editTextStyle_edt_delete_icon_height,0);
+
+        ta.recycle();
+
+        int width = mDrawableWidth == 0?(int) getResources().getDimension(R.dimen.x48):mDrawableWidth;
+        int height = mDrawableHight == 0?(int) getResources().getDimension(R.dimen.x48):mDrawableHight;
 
         mClearDrawable.setBounds(0, 0, width, height);
         //默认设置隐藏图标

@@ -1931,5 +1931,9 @@
     <declare-styleable name="RadioButton">
         <attr name="carbon_radioColor" format="reference|color" />
     </declare-styleable>
+    <declare-styleable name="editTextStyle">
+        <attr name="edt_delete_icon_width" format="dimension"/>//右边删除图标宽度
+        <attr name="edt_delete_icon_height" format="dimension"/>//右边删除图标高度
+    </declare-styleable>
 
 </resources>
