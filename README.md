@@ -1,4 +1,4 @@
-## CustomView
+### CustomView
 
 ### 简介
 
@@ -23,9 +23,9 @@
 
 ### 效果介绍
 
-### 进度加载类：
+## 进度加载类：
 
-#### Loading   开源地址：https://github.com/ybq/Android-SpinKit
+### Loading   开源地址：https://github.com/ybq/Android-SpinKit
 ![](https://github.com/wzgl5533/CustomView/blob/master/myview/src/main/java/cn/qlh/sdk/myview/loading/spinkit_view.gif)
 
 ##### Use 使用方法
@@ -74,7 +74,7 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 ```
 
 ![](https://github.com/andyxialm/SmoothCheckBox/blob/master/art/smoothcb.gif?raw=true)
-### Attrs 属性
+#### Attrs 属性
 |attr|format|description|
 |---|:---|:---:|
 |duration|integer|动画持续时间|
@@ -100,7 +100,7 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 ```
 
 ![]()
-### Attrs 属性
+#### Attrs 属性
 |attr|format|description|
 |---|:---|:---:|
 |tb_before_text|string|点击之前显示文本|
@@ -125,7 +125,7 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 ```
 
 ![]()
-### Attrs 属性
+#### Attrs 属性
 |attr|format|description|
 |---|:---|:---:|
 |civ_border_width|dimension|边框宽度|
