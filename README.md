@@ -14,7 +14,7 @@
 ### Loading   开源地址：https://github.com/ybq/Android-SpinKit
 ![](https://github.com/wzgl5533/CustomView/blob/master/myview/src/main/java/cn/qlh/sdk/myview/loading/spinkit_view.gif)
 
-使用方法：
+#### Use 使用方法
 ```
 SpinKitViewManager loading = new SpinKitViewManager(this);
 loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
@@ -26,7 +26,7 @@ loading.setProgressBarStyle(SpinKitViewManager.CUBE_GRID)
 
 ### MyClearEditText
 
-#### Use 使用方法：
+#### Use 使用方法
 ```
 <cn.qlh.sdk.myview.edittext.MyClearEditText
             android:layout_width="match_parent"
