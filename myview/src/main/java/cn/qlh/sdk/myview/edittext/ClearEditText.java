@@ -137,7 +137,7 @@ public class ClearEditText extends AppCompatEditText implements
  
     @Override 
     public void afterTextChanged(Editable s) { 
-         
+
     }
 
 
