@@ -4,6 +4,28 @@
 
 本库主要用于自己的项目，收集很多优秀开源的组件，对其进行封装和归纳，方便使用，再此感谢，各位小伙伴也可以使用或者修改维护自己的库，喜欢的可以打个星。
 
+### 集成方法
+
+Step 1. Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
+
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
+
+```
+	dependencies {
+	        compile 'com.github.wzgl5533:CustomView:1.1'
+         
+         //最新的版本请查看release
+	}
+```
 ### 模块分类
 
 **进度加载类**
