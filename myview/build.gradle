@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group 'com.github.wzgl55331'
 android {
     compileSdkVersion 25
     buildToolsVersion '26.0.2'
@@ -39,8 +38,6 @@ dependencies {
     compile 'com.iarcuschin:simpleratingbar:0.1.5'
     //SeekBar
     compile 'com.xw.repo:bubbleseekbar:3.4-lite'
-    //带缩放的ImageView
-    compile 'com.github.chrisbanes:PhotoView:+'
     //底部导航
     compile 'devlight.io:navigationtabbar:1.2.5'
     //扁平化控件
